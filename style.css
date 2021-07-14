@@ -5,6 +5,9 @@
 nav ul li {
     float: left;
 } */
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .container {
     width:1037px;
     margin:0 auto;
@@ -12,15 +15,17 @@ nav ul li {
 .banner_area{
     background-color:#2D25A0;
 }
+.banner_area:hover .banner_img img{
+    transform: rotate(360deg);
+    
+    transition:transform 1s ease-in-out;
+}
 .banner-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 60px 0;
 }
-.banner_info{
-
-}
 .banner_info h1 {
-    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color:#fff;
     font-size: 64px;
@@ -38,15 +43,13 @@ nav ul li {
     Height: 438px;
 }
 
-/* player area styles */
+/*------------------
+player area styles 
+-------------------*/
+
 .player_container{
     display: flex;
     padding: 60px 0;
-}
-.player_container img{
-    width: 95%;
-    margin: 10px auto;
-    display: block;
 }
 .player_container{
     display: grid;
@@ -56,16 +59,51 @@ nav ul li {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding:10px;
 }
+.player_container img{
+    width: 95%;
+    margin: 10px auto;
+    display: block;
+}
+
+
 .player h2{
-    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 28px;
 }
 .player p{
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 26px;
 }
+
+/* match styles */
+.match_title h2{
+    font-size: 1.5em;
+}
+.match{
+    display: flex;
+    margin:20px 0;
+    justify-content: space-between;
+    border:1px solid red;
+}
+.match img{
+    width:100px;
+    height: auto;
+}
+.match h3{
+    font-family: 'Niconne', cursive;
+    color:blue;
+}
+.match_shedule1{
+    margin-right: 20px;
+}
+.match_shedule2{
+    margin-left: 20px;
+}
+.shedule_wrapper{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
 /* footer styles */
 .logo img{
     width:250px;
@@ -75,6 +113,7 @@ nav ul li {
 }
 .social-icon{
     text-align: center;
+    margin-top:50px;
 }
 .social-icon img{
     Width:32px;
@@ -82,4 +121,6 @@ nav ul li {
 }
 footer p{
     text-align: center;
+    font-size: 18px;
+    line-height: 24px;
 }

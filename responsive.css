@@ -1,0 +1,110 @@
+/* for table Devices */
+
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+
+    /* banner area styles */
+
+    .container{
+        width:90%;
+        margin: 0 auto;
+    }
+    .banner_area{
+        width:100%;
+    }
+    .banner-container{
+        grid-template-columns: 1fr;
+    }
+    .banner_info h1 {
+        font-size: 44px;
+        padding-right: 20%;
+        line-height: 50px;
+    }
+    .banner_img{
+        margin-top:80px;
+    }
+    .banner_img img{
+        width: 100%;
+        height: auto;
+        margin-top:50px;
+        margin:0 auto;
+    }
+
+    /*----------------
+     player area styles 
+    ------------------ */
+    .player_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------------
+    match area styles 
+    ------------------*/
+    .shedule_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .match_title h2{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .match_shedule1{
+        margin-right: 0;
+    }
+    .match_shedule2{
+        margin-left: 0;
+    }    
+
+}
+
+/*  for mobile devices */
+@media only screen and (max-width: 767px) {
+    
+    /*--------------
+     banner area styles 
+     ------------------*/
+
+
+    .container{
+        width:90%;
+        margin: 0 auto;
+    }
+    .banner_area{
+        width:100%;
+    }
+    .banner-container{
+        grid-template-columns: 1fr;
+    }
+    .banner_info h1 {
+        font-size: 36px;
+        padding-right: 20%;
+        line-height: 50px;
+    }
+    .banner_img img{
+        width: 100%;
+        height: auto;
+        margin-top:50px;
+    }
+    /*----------------
+     player area styles 
+    ------------------ */
+    .player_container{
+        grid-template-columns: 1fr;
+    }
+
+    /* ---------------
+    match area styles 
+    ------------------*/
+    .shedule_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .match_title h2{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .match_shedule1{
+        margin-right: 0;
+    }
+    .match_shedule2{
+        margin-left: 0;
+    }    
+}
+
